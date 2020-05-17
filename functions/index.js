@@ -1,7 +1,7 @@
 const functions = require("firebase-functions");
 
 const admin = require("firebase-admin");
-var serviceAccount = require("./key.json");
+var serviceAccount = require("./key");
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
   databaseURL: "https://fir-resident-restapi.firebaseio.com",
